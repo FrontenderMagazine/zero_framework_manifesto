@@ -1,20 +1,21 @@
-Stop writing Javascript frameworks. 
+Перестаньте писать Javascript фреймворки.
 
-JavaScript frameworks seem like death and taxes; inevitable and unavoidable. I'
-m sure that if I could be a fly on that wall every time someone started a new 
-web project, the very first question they'd ask is, which JS framework are we 
-using? That's how ingrained the role of JS frameworks are in the industry today.
-But that's not the way it needs to be, and actually, it needs to stop.
+Javascript фреймворки подобно смерти и налогам; неминуемые и неизбежны. Я 
+уверен, что если бы я мог быть мухой на той стене, где каждый раз, когда кто-то
+начинает новый веб-проект, то самый первый вопрос, который они бы задали ето, 
+какой JS фреймворк мы используем? Вот как укоренилось роль JS фреймворков в 
+отрасли сегодня. Но это не тот путь, по которому должно все идти, и на самом 
+деле, ето нужно остановить.
 
-Let's back up and see how we got here. 
+> Angular и Backbone и Ember, о мой.
 
-> Angular and Backbone and Ember, oh my.
+В течение долгого времени [веб-платформы][1], технологичный стек наиболее 
+лаконично описывается как HTML+CSS+JS, был, из-за отсутствия лучшего термина,
+катастрофичным. Кто может забыть блочную модель IE, или layer тег? Я уверен, 
+что у некоторых из вас началось подергивание из-за воспоминаний о старых плохих
+временах веб-разработки благодаря словам выше.
 
-For a long time the [web platform][1], the technology stack most succinctly
-described as HTML+CSS+JS, was, for lack of a better term, a disaster. Who can 
-forget the IE box model, or the layer tag? I'm sure I just started several of 
-you twitching with flashbacks to the bad old days of web development with just 
-those words.
+
 
 For a long time there was a whole lot of inconsistency between browsers and we
 , as an industry, had to write frameworks to paper over them. The problem is 
@@ -202,12 +203,12 @@ between libraries and frameworks, a library providing an orthogonal piece of
 functionality that can be used with other libraries. Libraries are fine, it's 
 the frameworks that demand 100% buyin that I'd like to see us move away from.
 
-**Q:** But I like data binding! 
+**Q:** Но мне нравится привязки данных!
 
-**A:** Lot's of people do, I was only expressing a personal preference. I didn'
-t say that*you* shouldn't use data binding, but only that you don't need to
-adopt an entire framework to get data-binding, there are standalone libraries 
-for that.
+**A:** Много кто ето делает, я только высказываю личные предпочтения. Я не говорю, что
+*вы* не должны использовать связывание данных, но только то, что вам не нужно, 
+принимать весь фреймворк, чтобы получить привязку данных, есть автономные 
+библиотеки для етого.
 
 2014-05-09
 
@@ -225,7 +226,6 @@ for that.
  [12]: http://bosonic.github.io/
  [13]: http://mozbrick.github.io/docs/brick-flipbox.html
  [14]: https://developer.mozilla.org
-
  [15]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind#Compatibility
  [16]: http://www.polymer-project.org/articles/polymer-xtag-vanilla.html
  [17]: http://mozilla.github.io/brick/download.html
