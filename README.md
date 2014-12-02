@@ -1,1 +1,1 @@
-Stop writing Javascript frameworks 
+Никаких больше JS фреймворков
