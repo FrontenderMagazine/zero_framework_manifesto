@@ -15,32 +15,31 @@ Javascript фреймворки подобно смерти и налогам; �
 что у некоторых из вас началось подергивание из-за воспоминаний о старых плохих
 временах веб-разработки благодаря словам выше.
 
+Долгое время было намного несоответствия между браузерами и мы, как отрасль, 
+должны были писать фреймворки как обои над ними. Проблема в том,
+что разногласия даже по фундаментальных вопросах, среди браузеров, например как 
+события распространяются или какие теги поддерживаются, так что каждый фреймворк
+не только был обоями над дирами, но разработывал свои собственные модели, как 
+браузер должен работь. На самом деле их собственные модел*и*, во множественном 
+числе, потому что вы должны изобрести модель о том как события распространяются,
+модель как взаимодействовать с DOM, и т.д. Много изобретений было сделано. И так 
+фреймворки были написаны, каждый как снежинка, тысячи цветков цвели  и дали нам 
+что то вроде JQuery и Dojo и MochiKit и Ext JS и AngularJS и Backbone и Ember и 
+React. За прошедшие *десять* лет мы наблюдали устойчивый парад JS фреймворков.
 
-
-For a long time there was a whole lot of inconsistency between browsers and we
-, as an industry, had to write frameworks to paper over them. The problem is 
-that there was disagreement even on the fundamental issues among browsers, like 
-how events propagate, or what tags to support, so every framework not only 
-papered over the holes, but designed their own model of how the browser should 
-work. Actually their own model*s*, plural, because you got to invent a model
-for how events propagate, a model for how to interact with the DOM, etc. A lot 
-of inventing went on. So frameworks were written, each one a snowflake, a 
-thousand flowers bloomed and gave us the likes of jQuery and Dojo and MochiKit 
-and Ext JS and AngularJS and Backbone and Ember and React. For the past*ten*
-years we’ve been churning out a steady parade of JS frameworks.
-
-But something else has happened over the past ten years; browsers got better.
-Their support for standards improved, and now there are evergreen browsers: 
-automatically updating browsers, each version more capable and standards 
-compliant than the last. With newer standards like:
+Но что-то еще произошло за последние десять лет; браузеры стали лучше.
+Их поддержка стандартов улучшилась, и сейчас есть вечнозеленые браузеры:
+автоматическое обновление браузеров, каждая версия более способна и стандарто
+совместима, чем в прошлом. В новых стандартах, таких как:
 
 *   [HTML Imports][2]
 *   [Object.observe][3]
 *   [Promises][4]
 *   [HTML Templates][5]
 
-I think it's time to rethink the model of JS frameworks. There's no need to
-invent yet another way to do something, just use HTML+CSS+JS.
+Я думаю, пришло время переосмыслить модель JS фреймворков. Нет необходимости
+изобретать еще один способ сделать что-то, просто используйте HTML+CSS+JS.
+
 
 So why are we still writing JS frameworks? I think a large part of it is
 inertia, it's habit. But is that so bad, it's not like frameworks are actively 
