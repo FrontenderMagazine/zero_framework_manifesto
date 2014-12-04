@@ -64,14 +64,15 @@ React. За прошедшие *десять* лет мы наблюдали у�
 будете копаться вниз через все слои в фреймворке, что бы понять что не так,
 вплоть до HTML+CSS+JS.
 
-> Mapping the iceberg. 
+> Картографирование айсберга. 
 
-A framework is like an iceberg, that 10% floating above the water doesn't look
-dangerous, it's the hidden 90% that will eventually get you. Actually it's even 
-more apt than that, learning a framework is like mapping an iceberg, in order to
-use the framework you need to learn the whole thing, apply the effort of mapping
-out the entire thing, and in the long run the process is pointless because the 
-iceberg is going to melt anyway.
+Фреймворк, как айсберг, те 10% плавающей над водой не выглядят опасно, зато 
+скрытые 90%, именно то, что в конечном счете ловит вас. На самом деле это даже
+более склонны, изучение фреймворка, как картографировать айсберг, для того, чтобы
+использовать его вам нужно узнать все о нем, применить усилие картографировать
+всей особености, и в конечном счете процесс идет в никуда, потому что
+айсберг будет таять в любом случае.
+
 
 **Widgets** Another selling point of frameworks is that you can get access to a
 library of widgets. But really, you shouldn't need to adopt a framework to get 
@@ -92,7 +93,7 @@ That's lost effort.
 
 So what does a post-framework world look like? 
 
-> HTML+CSS+JS are my framework. 
+> HTML+CSS+JS есть мой фреймворк. 
 
 The fundamental idea is that frameworks aren't needed, use the capabilities
 already built into HTML+CSS+JS to build your widgets. Break apart the monoliths 
