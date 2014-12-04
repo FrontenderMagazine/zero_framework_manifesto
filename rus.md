@@ -49,18 +49,20 @@ React. За прошедшие *десять* лет мы наблюдали у�
 
 > gist -> library -> framework 
 
-Frameworks aren't just big libraries, they have their own models for how to
-interact with events, with the DOM, etc. So why avoid frameworks?
+Фреймворки не только крупные библиотеки, они имеют свои собственные модели для 
+того, как взаимодействовать с событиями, с DOM, и т.д. Так почему избегать 
+фреймворков?
 
-**Abstractions** Well, one of the problems of frameworks is usually one of
-their selling points, that they abstract away the platform so you can 
-concentrate on building your own software. The problem is that now you have two 
-systems to learn, HTML+CSS+JS, and the framework. Sure, if the framework was a 
-perfect abstraction of the web as a platform you would never have to go beyond 
-the framework, but guess what,[abstractions leak][6]. So you need to know HTML+
-CSS+JS because at some point your program won't work the way you expect it to, 
-and you’ll have to dig down through all the layers in the framework to figure 
-out what's wrong, all the way down to HTML+CSS+JS.
+**Абстракции** Ну, одна из проблем фреймворков, как правило, одина из
+их торговых точок, ето то что они абстрагируються от платформы, так что вы 
+можете сосредоточиться на создании собственного программного обеспечения. 
+Проблема в том, что теперь вам нужно знать две системы, HTML+CSS+JS и фреймворк.
+Конечно, если фреймворк был бы идеально абстрагирован от сети как платформы, 
+за которую вы никогда не должны выходить, но догадайтесь, что, 
+[утечка абстракции] [6]. Таким образом, вы должны знать, HTML+CSS+JS, потому что
+в какой-то момент ваша программа не будет работать так, как вы ожидаете, и вы 
+будете копаться вниз через все слои в фреймворке, что бы понять что не так,
+вплоть до HTML+CSS+JS.
 
 > Mapping the iceberg. 
 
