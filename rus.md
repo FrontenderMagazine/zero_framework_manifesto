@@ -164,53 +164,54 @@ Polymer. Потребность в етом будет уменьшаться с
 
 ## Вопросы и Ответы {#qa}
 
-**Q:** Why do you hate framework authors.
+**В:** Почему вы ненавидите авторов фреймворков.
 
-**A:** I don’t hate them. Some of my best friends are framework authors. I
-will admit a bit of inspiration from the tongue-in-cheek
-[you have ruined javascript][21], but again, no derision intended for framework
-authors.
+**О:** Я не ненавижу их. Некоторые из моих лучших друзей авторы фрейворков. Я
+допускаю немного вдохновения от языка-в-щеке от [ты погубил JavaScript][21], но 
+опять же, не предназначенных для авторов фреймворков.
 
-**Q:** You can’t do \__\_|\_ in HTML5, for that you need a framework.
+**В:** Вы не можете сделать \__\_|\_ в HTML5, для етого вам нужен фреймворк.
 
-**A:** First, that's not a question. Second, thanks for pointing that out. Now
-let's work together to add the capabilities to HTML 5 that allows \__\_|\_ to be
-done w/o a framework.
+**О:** Во-первых, это не вопрос. Во-вторых, спасибо что наголосили на етом. 
+Сейчас давайте работать вместе, чтобы добавить возможность до HTML5, что 
+позволяет сделать \__\_|\_ без фреймворка.
 
-**Q:** But \___| isn't a framework, it's a library!
+**В:** Но \___| не фреймворка, ето библиотека!
 
-**A:** Yeah, like I said, it’s a gradient from gist to framework, and you
-might draw the lines slightly differently from me. That's OK, this isn't about 
-the categorization of any one particular piece of software, it's about moving 
-away from frameworks.
+**О:** Да, как я уже сказал, это градиент от gist к фреймворку, и вы
+может рисовать линии немного по-другому от меня. Это нормально, это не про
+классификацию какой-либо конкретной части программного обеспечения, речь идет об 
+отдалению от фреймворков.
 
-**Q:** I've been doing this for years, with \_\_\_| and \\_\_\_| and \\___|.
+**В:** Я делал ето годами с помощью \_\_\_| и \\_\_\_| и \\___|.
 
-**A:** Again, that's not a question, but regardless, good for you, you should
-be in good shape to help everyone else.
+**О:** Опять же, это не вопрос, но несмотря на это, хорошо для вас, вы должны
+быть в хорошей форме, чтобы помочь всем остальным.
 
-**Q:** So everyone needs to rewrite dropdown menus, tabs, sliders and toggles
-themselves?
+**В:** Таким образом, каждый должен переписать выпадающие меню, вкладки, 
+ползунки и переключатели сам?
 
-**A:** Absolutely not, the point is there should be a way to create those
-elements in a way that doesn't require buying into one particular framework.
+**О:** Абсолютно нет, дело в том, что должен быть способ, чтобы создать те
+элементы таким образом, что не требует покупки в одного конкретного фреймворка.
 
-**Q:** Dude, all those HTML Imports are going to kill my sites performance.
+**В:** Чувак, все эти HTML импорты собираются убить производительность моих 
+сайтов.
 
-**A:** Yes, if you implemented all this stuff naively it would, which is why I
-[mentioned the need for tools][22] to compile and crush all the HTML, CSS, and
-JS.
+**О:** Да, если вы реализовали все эти вещи наивно, почему я 
+[указывал на необходимости инструментов][22], чтобы скомпилировать и снести 
+весь HTML, CSS, и JS.
 
-**Q:** So I'm not supposed to use *any* libraries? 
+**В:** Так что я не должен использовать *любые* библиотеки? 
 
-**A:** No, that's not what I said, I was very careful to delineate a line
-between libraries and frameworks, a library providing an orthogonal piece of 
-functionality that can be used with other libraries. Libraries are fine, it's 
-the frameworks that demand 100% buyin that I'd like to see us move away from.
+**О:** Нет, это не то, что я сказал, я был очень осторожен, чтобы очертить линию
+между библиотеками и фреймворками, библиотека, обеспечивающая ортогональный 
+кусок функциональности, которая может быть использована с другими библиотеками. 
+Библиотеки ето хорошо, это фреймворки, которые требуют 100% покупки, которую я 
+хотел бы отвести от нас.
 
-**Q:** Но мне нравится привязки данных!
+**В:** Но мне нравится привязки данных!
 
-**A:** Много кто ето делает, я только высказываю личные предпочтения. Я не 
+**О:** Много кто ето делает, я только высказываю личные предпочтения. Я не 
 говорю, что *вы* не должны использовать связывание данных, но только то, что вам
 не нужно, принимать весь фреймворк, чтобы получить привязку данных, есть 
 автономные библиотеки для етого.
