@@ -95,70 +95,74 @@ React. За прошедшие *десять* лет мы наблюдали у�
 
 > HTML+CSS+JS есть мой фреймворк. 
 
-The fundamental idea is that frameworks aren't needed, use the capabilities
-already built into HTML+CSS+JS to build your widgets. Break apart the monoliths 
-into orthogonal components that can be mixed in any combination. The final 
-pieces that enable all of this fall under the umbrella of[Web Components][8]
+Основная идея в том, что фреймворки не нужны, используйте возможности уже 
+встроеные в HTML+CSS+JS для создания ваших виджетов. Разбейте монолиты на куски
+ортогональных компонентов, которые могут быть смешаны в любом сочетании. 
+Финальный кусок будет объединять и включать весь етот град под одной парасолькой
+[Web Components][8]
 
-HTML Imports, HTML Templates, Custom Elements, and Shadow DOM are the enabling
-technologies that should allow us to cut the cord from frameworks, allowing the 
-creation of reusable elements and functionality. For a much better introduction 
-see these articles and libraries:
+HTML импорт, HTML шаблоны, настраиваемые элементы, и Shadow DOM являются 
+включающими технологиями, которые должны позволить нам разрезать путы от 
+фреймворков, позволяющих создание многоразовых элементов и функциональности. Для
+наглядного представления смотрите ети статьи и библиотеки:
 
 *   [HTML Imports][9]
 *   [Polymer][10]
 *   [X-Tag][11]
 *   [Bosonic][12]
 
-So, we all create [<x-flipbox>][13]'s, declare victory, and go home? 
+Так, мы все создадим [<x-flipbox>][13], объявим о победе, и вернемся домой?
 
-No, not actually, the first thing you need for working with Web Components are
-polyfills for that functionality, such as X-Tag and Polymer. The need for those 
-will decrease over time as browsers flesh out their implementations of those 
-specifications.
+Нет, не совсем, первое, что вам нужно для работы с веб-компонентами является
+мультизаполнение (от пер. polyfill) для этой функциональности, такое как X-Tag и
+Polymer. Потребность в етом будет уменьшаться с течением времени, как браузеры 
+конкретизируют свои реализации тех спецификаций.
 
-A point to be stressed here is that these polyfills aren't frameworks that
-introduce their own models to developing on the web, they enable the HTML 5 
-model. But that isn't really the only need, there are still minor gaps in the 
-platform where one browser deviates in a small way from current standards, and 
-that's something we need to polyfill.[MDN][14] seems to have much of the needed
-code, as the documentation frequently contains
-[ short per-function polyfills][15].
+Момент, который следует подчеркнуть, что это мультизаполнение не фреймворки, 
+которые предоставляют свои собственные модели для разработки в сети, они 
+включают HTML5 модель. Но это на самом деле не только необходимость, есть еще и 
+небольшие пробелы в платформе, где один браузер отклоняется в небольшом от
+действующих стандартов, и это то, что мы должны мультизаполнить. В [MDN][14], 
+кажется, есть много необходимого кода, как в документации часто содержится
+[короткое между функционное мультизаполнение][15].
 
-So one huge HTML 5 Polyfill library would be good, but even better would be
-what I callhtml-5-polyfill-o-matic, a set of tools that allows me to write Web
-Components via bog standard HTML+JS and then after analyzing my code, either via
-static analysis or via`Object.observe` at runtime, it produces a precise subset
-of the full HTML 5 polyfill for my project.
+Так одна огромная HTML5 Polyfill библиотека будет уже хорошо, но еще лучше было 
+бы то, что я callhtml-5-polyfill-O-Matic, набор инструментов, который позволяет 
+мне писать веб-компонент через трясину стандартнов HTML+JS, а затем после 
+анализа моего кода, либо через статический анализ или через `Object.observe` во
+время выполнения, он произведет точное подмножество полного HTML5 
+мультизаполнения для моего проекта.
 
-This sort of functionality will be even more important as I start trying to mix
-and match web components and libraries from multiple sources, i.e. an <x-foo> 
-from X-Tag and a <core-bar> from Polymer, does that mean I should have to 
-include both of their polyfill libraries?
-([It turns out the answer is no][16].) And how exactly should I get these
-custom elements? Both X-Tag and Brick have custom bundle generators:
+Этот вид функциональности будет еще более важен, чем когда я начал попытки 
+скрестить и соотвести веб-компоненты и библиотеки из нескольких источников, т.е.
+<x-foo> от X-Tag и <core-bar> от Polymer, значит ли это, что мне придется
+включают обе ети мультизаполнительные библиотеки?
+([Оказывается, что ответ нет][16].) И как именно я должен получить эти
+спецефические элементы? Оба X-Tag и Brick имеют спецефические пакеты генераторов:
 
 *   [Brick Download][17] 
 *   [X-Tag Download][18] 
 
-If I start creating custom elements do I need to create my own custom bundler
-too? I don't think that's a scalable idea, I believe we need idioms and tools 
-that handle this much better. This may actually mean changing how we do open 
-source; a 'widget' isn't a project, so our handling of these things needs to 
-change. Sure, still put the code in Git, but do you need the full overhead of a 
-GitHub project? Something lighter weight, closer to a Gist than a current 
-project might be a better fit. How do I minimize
-/[vulcanize][19] all of this code into the right form for use in my project?
-Something like[Asset Graph][20] might be a good start on that. 
+Если я начну создавать собственные элементы мне нужно будет создавать и свой 
+собственный пакет тоже? Я не думаю, что это масштабируемая идея, я считаю, что 
+нам нужны идиомы и инструменты что справиться с этим гораздо лучше. Это на самом
+деле может означать изменение, того как мы делаем открытый код; 'виджет' не 
+проект, поэтому наша работа с этими вещами должна изменится. Конечно, далее 
+оставлять код в Git, но вам нужен полный накладной проект на GitHub? Что-то 
+более легковесящее, ближе к Gist, чем текущий проект может быть лучше. Как 
+свести к минимуму [извержение] [19] всего этого кода в нужной форме для 
+использования в моем проекте?
+Что-то вроде [Asset Graph][20] может быть хорошим началом для этого.
 
-So what do we need now? 
+И так, что нам теперь нужно?
 
-That's what we need to build a future where we don't need to learn the latest
-model of the newest framework, instead we just work directly with the platform, 
-pulling in custom elements and libraries to fill specific needs, and spend our 
-time building applications, not mapping icebergs.
+Это то, что мы должны построить в будущем, в котором мы не нуждаемся, в знании 
+знать последнею модель новейшого фреймворка, вместо этого мы просто работаем 
+напрямую с платформой, потянув в спецефических элементах и библиотеках для 
+заполнения конкретных потребностей, и тратить наше время создавая приложение, 
+при этом не картографировать айсберги.
 
-## Q&A {#qa}
+## Вопросы и Ответы {#qa}
 
 **Q:** Why do you hate framework authors.
 
